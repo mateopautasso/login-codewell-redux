@@ -23,7 +23,7 @@ function LoginRight() {
       {
         !email && 
         <div>
-          <p style={stylesP}>Datos -> Email: ejemplo@gmail.com, Contraseña: 1234</p>
+          <p style={stylesP}>Datos - Email: ejemplo@gmail.com, Contraseña: 1234</p>
           <p style={stylesP}>(En local funciona con una llamada fetch a un json a través de la librería json-server)</p>
         </div>
       }

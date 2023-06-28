@@ -4,7 +4,7 @@ import TextTermsConditions from './TextTermsConditions';
 import LabelForm from './LabelForm';
 import InputText from './InputForm';
 import { useState } from 'react';
-import fetchGetReq from '../services/fetch';
+// import fetchGetReq from '../services/fetch';
 import { useDispatch } from 'react-redux';
 import { logIn } from '../redux/userSlice/userSlice';
 
