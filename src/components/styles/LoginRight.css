@@ -1,0 +1,33 @@
+.login-right {
+    box-sizing: border-box!important;
+    padding: 52px 52px;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (width < 1024px) {
+    .login-right {
+        border-radius: 0px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        justify-content: space-around;
+    }
+}
+@media (width < 600px) {
+    .login-right {
+        border: none;
+        border-radius: 0px;
+    }
+}

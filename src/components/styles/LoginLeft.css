@@ -1,0 +1,32 @@
+.login-left {
+    width: 100%;
+    height: 100%;
+    padding: 52px 52px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #013243;
+}
+.title-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+@media (width < 1024px) {
+    .login-left {
+        border-radius: 0px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+}
+@media (width < 600px) {
+    .login-left {
+        border-radius: 0px;
+    }
+}
