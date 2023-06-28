@@ -27,19 +27,35 @@ function Form() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const dataDB = await fetchGetReq('http://localhost:3000/user');
-    const registeredUser = dataDB.find((user) => user.email === email);
+    // const dataDB = await fetchGetReq('http://localhost:3000/user');
+    // const registeredUser = dataDB.find((user) => user.email === email);
+    // const userDefault = {
+    //   email: 'ejemplo@gmail.com',
+    //   password: '1234'
+    // }
+
+    // if(registeredUser !== undefined && registeredUser.password === password && checkbox) {
+    //   dispatch(logIn({
+    //     email,
+    //     password,
+    //   }))
+    // } else if(email === userDefault.email && password === userDefault.password && checkbox) {
+    //   console.log(email)
+    //   dispatch(logIn({
+    //     email,
+    //     password,
+    //   }))
+    // } else {
+    //   alert('¡Campos incompletos o incorrectos!')
+    // }
+
+    // Adaptación para que funcione sin petición fetch
     const userDefault = {
       email: 'ejemplo@gmail.com',
       password: '1234'
     }
 
-    if(registeredUser !== undefined && registeredUser.password === password && checkbox) {
-      dispatch(logIn({
-        email,
-        password,
-      }))
-    } else if(email === userDefault.email && password === userDefault.password && checkbox) {
+    if(email === userDefault.email && password === userDefault.password && checkbox) {
       console.log(email)
       dispatch(logIn({
         email,
